@@ -14,14 +14,14 @@ function ContactSection({ isHomePage }) {
           </div>
           <div className="contact-details-cont">
             <div className="contact-details">
-              <p>Sukhwinder Singh</p>
+              <p>Sukhwinder Bhatia</p>
               <div className="phone cont">
                 <i className="fas fa-phone-alt"></i>
                 <a href="tel:+610450723673">0450 723 673</a>
               </div>
               <div className="email cont">
                 <i className="far fa-envelope"></i>
-                <a href="mailto:agelectrical@mail.com">agelectrical@mail.com</a>
+                <a href="mailto:ssb@sukhelectrical.com.au">ssb@sukhelectrical.com.au</a>
               </div>
               <div className="social-media-links-container">
                 <Link

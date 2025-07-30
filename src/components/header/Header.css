@@ -39,8 +39,9 @@ h4 {
   color: #0056A6;
 }
 
-.book{
+.book {
   color: #FF9800;
+  cursor: pointer;
 }
 
 .phone-container {
@@ -63,13 +64,84 @@ h4 {
   font-weight: bold;
   display: block;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .mob:hover {
-  color: #0056A6; /* Blue on hover to match theme */
-  text-decoration: underline; /* Subtle underline on hover */
+  color: #0056A6;
+  text-decoration: underline;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black for fade */
+  z-index: 999; /* Below options but above content */
+}
+
+.option {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the text container */
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  width: 200px; /* Square dimension */
+  height: 200px; /* Square dimension */
+  z-index: 1000; /* Above overlay */
+  background-color: #145077; 
+  border-radius: 10px; /* Square with rounded corners */
+  transition: all 0.3s ease;
+}
+
+.option-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FF9800; /* White text for contrast */
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.4; /* Improved line spacing */
+  letter-spacing: 0.5px; /* Subtle letter spacing for aesthetics */
+  text-align: center;
+}
+
+.email-option {
+  top: 50%;
+  left: calc(50% - 210px); /* Adjusted to prevent overlap, 200px width + 10px gap */
+  transform: translateY(-50%);
+}
+
+.email-option:hover {
+  background-color: #0066cc; /* Lighter blue on hover */
+}
+
+.email-option:hover .highlight {
+  text-decoration: underline; /* Underline only the email */
+}
+
+.phone-option {
+  top: 50%;
+  left: calc(50% + 10px); /* Adjusted to prevent overlap, 10px gap */
+  transform: translateY(-50%);
+}
+
+.phone-option:hover {
+  background-color: #0066cc; /* Lighter blue on hover */
+}
+
+.phone-option:hover .highlight {
+  text-decoration: underline; /* Underline only the phone number */
+}
+
+.highlight {
+  font-weight: 600; /* Slightly bolder for emphasis */
+  display: block; /* Ensures underline applies correctly */
+}
 
 @media (max-width: 960px) {
   .quote-container {
@@ -89,5 +161,20 @@ h4 {
   }
   .header-icon {
     display: none;
+  }
+  .option {
+    width: 150px; /* Smaller squares for mobile */
+    height: 150px;
+  }
+  .option-text {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    letter-spacing: 0.3px;
+  }
+  .email-option {
+    left: calc(50% - 165px); /* Adjusted for mobile */
+  }
+  .phone-option {
+    left: calc(50% + 15px); /* Adjusted for mobile */
   }
 }
