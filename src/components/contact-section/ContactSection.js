@@ -10,39 +10,49 @@ function ContactSection({ isHomePage }) {
         <h1 className="contact-title">Contact</h1>
         <div className="contact-info-container">
           <div className="contact-text-cont">
-            <p>Hi, I'm Ashley Gambrill from AG Electrical Services. We are based in Hatfield, Hertfordshire and are delighted to offer our services across Hertfordshire and North London. Please feel free to get in touch with any concerns that you have regarding electrical work. We'd love to be able to help, no matter the size or complexity of the job.</p>
+            <p>
+            Hi, I’m Sukhwinder Bhatia, owner of SUKH ELECTRICAL PTY LTD. Based in Wattle Grove, Western Australia, I deliver expert electrical services across WA with a focus on quality. Licensed by the Electrical Licensing Board WA (Licence #EC014990), I tackle jobs of any size or complexity with proven skill. Feel free to contact me with any electrical needs—I’m committed to helping you.
+            </p>
           </div>
-          <div className="contact-details-cont">
+          <div className="contact-details-wrapper">
             <div className="contact-details">
-              <p>Sukhwinder Bhatia</p>
-              <div className="phone cont">
-                <i className="fas fa-phone-alt"></i>
-                <a href="tel:+610450723673">0450 723 673</a>
+              <div className="contact-header">
+                <p className="contact-name">Sukhwinder Bhatia</p>
               </div>
-              <div className="email cont">
-                <i className="far fa-envelope"></i>
-                <a href="mailto:ssb@sukhelectrical.com.au">ssb@sukhelectrical.com.au</a>
-              </div>
-              <div className="social-media-links-container">
-                <Link
-                  className='social-link'
-                  to={'//www.facebook.com/ashleygambrillelectrical'}
-                  target='_blank'
-                  aria-label='Facebook'
-                >
-                  <FaFacebookSquare />
-                </Link>
-                <Link
-                  className='social-link'
-                  to={'//www.instagram.com/ashleygambrillelectrical'}
-                  target='_blank'
-                  aria-label='Instagram'
-                >
-                  <FaInstagram />
-                </Link>
+              <div className="contact-info">
+                <div className="phone cont">
+                  <i className="fas fa-phone-alt"></i>
+                  <a href="tel:+610450723673">0450 723 673</a>
+                </div>
+                <div className="email cont">
+                  <i className="far fa-envelope"></i>
+                  <a href="mailto:ssb@sukhelectrical.com.au">ssb@sukhelectrical.com.au</a>
+                </div>
+                <div className="address cont">
+                  <i className="fas fa-map-marker-alt"></i>
+                  <span>7 Tristam Lane, Wattle Grove, WA 6107</span>
+                </div>
+                <div className="social-media-links-container">
+                  <Link
+                    className='social-link'
+                    to={'//www.facebook.com/sukhelectrical'}
+                    target='_blank'
+                    aria-label='Facebook'
+                  >
+                    <FaFacebookSquare />
+                  </Link>
+                  <Link
+                    className='social-link'
+                    to={'//www.instagram.com/sukhelectrical'}
+                    target='_blank'
+                    aria-label='Instagram'
+                  >
+                    <FaInstagram />
+                  </Link>
+                </div>
               </div>
             </div>
-            <img className="contact-logo" src="/images/logo.jpg" alt="logo" />
+            <img className="client-photo" src="/images/me.jpg" alt="Sukhwinder Bhatia" />
           </div>
         </div>
       </div>

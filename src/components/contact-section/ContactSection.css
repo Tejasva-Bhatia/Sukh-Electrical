@@ -1,16 +1,17 @@
 .contact-section {
-  background-color: #d0cfcf;
+  background-color: #F5F1E9; /* Light cream background */
+  padding: 40px 0;
 }
 
 .contact-section-standalone {
   min-height: calc(100vh - 220px);
-  background-color: #d0cfcf;
+  background-color: #F5F1E9; /* Consistent background */
+  padding: 40px 0;
 }
 
 .contact-section-container {
   width: 80%;
   margin: 0 auto;
-  padding: 20px 0;
   max-width: 1170px;
 }
 
@@ -18,77 +19,167 @@
   text-align: center;
   margin-bottom: 25px;
   font-size: 2.5rem;
+  color: #B87333; /* Warm copper for title */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px; /* Increased gap to prevent overlap */
+  align-items: flex-start;
 }
 
 .contact-text-cont {
-  width: 100%;
-  padding-bottom: 30px;
+  flex: 2;
+  min-width: 280px;
+  color: #2C3E50; /* Deep charcoal text */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+  padding-right: 20px; /* Added padding to create space on the right */
 }
 
-.contact-details-cont {
+.contact-details-wrapper {
+  flex: 1;
+  min-width: 280px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 35px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between; /* Pushes photo to the right */
 }
 
 .contact-details {
-  line-height: 1.8;
   display: flex;
   flex-direction: column;
+  gap: 5px; /* Reduced space between name and phone */
 }
 
-.cont {
-  font-size: 1rem;
+.contact-header {
   display: flex;
   align-items: center;
 }
 
-.cont a {
-  margin-left: 7px;
-  text-decoration: none;
-  color: black;
+.contact-name {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #2C3E50; /* Deep charcoal for name */
+  font-weight: 600;
 }
 
-.social-link {
-  margin-right: 5px;
-  font-size:  2.4rem;
-  cursor: pointer;
-  color: #7a7d7d;
+.contact-info {
   display: flex;
+  flex-direction: column;
+  gap: 5px; /* Consistent small gap */
 }
 
-.social-link:hover {
-  color: black;
-  transition: all 0.3s linear;
+.cont {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  color: #2C3E50;
 }
 
-.contact-logo {
-  width: 120px;
-  height: 94px;
+.cont i {
+  margin-right: 8px;
+  color: #B87333; /* Copper for icons */
+  font-size: 1.2rem;
+}
+
+.cont a {
+  margin-left: 0;
+  text-decoration: none;
+  color: #2C3E50;
+  transition: color 0.3s ease;
+}
+
+.cont a:hover {
+  color: #B87333; /* Copper on hover */
+}
+
+.address {
+  font-style: normal;
+  font-size: 1rem;
 }
 
 .social-media-links-container {
   display: flex;
   justify-content: flex-start;
-  padding-top: 8px;
-  margin-left: -4px;
+  padding-top: 5px;
+}
+
+.social-link {
+  margin-left: 12px;
+  font-size: 2.2rem;
+  cursor: pointer;
+  color: #7F8C8D; /* Subdued gray */
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #B87333; /* Copper on hover */
+}
+
+.client-photo {
+  width: 120px; /* Adjusted for better fit */
+  height: auto;
+  object-fit: cover; /* Ensures photo fits without distortion */
+  border-radius: 6px; /* Softer rounding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  align-self: flex-start; /* Aligns to top right */
 }
 
 @media (min-width: 960px) {
   .contact-info-container {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 50px;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px; /* Increased gap for desktop */
+  }
+  .contact-details-wrapper {
+    flex-direction: row;
+    justify-content: flex-end; /* Ensures photo stays far right */
+  }
+  .contact-details {
+    flex: 1;
+    max-width: 70%; /* Prevents overcrowding */
   }
   .contact-text-cont {
-    padding-bottom: 0;
-    text-align: justify;
+    padding-right: 30px; /* More padding on desktop */
+  }
+  .client-photo {
+    width: 140px; /* Slightly larger on desktop */
+    margin-left: 20px; /* Space from details */
   }
 }
 
 @media (max-width: 420px) {
   .contact-section-container {
     width: 90%;
+  }
+  .contact-title {
+    font-size: 2rem;
+  }
+  .contact-text-cont {
+    font-size: 1rem;
+    padding-right: 10px; /* Reduced padding on mobile */
+  }
+  .cont {
+    font-size: 1rem;
+  }
+  .contact-name {
+    font-size: 1.2rem;
+  }
+  .contact-details-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .client-photo {
+    width: 100px;
+    margin-top: 15px;
+  }
+  .social-link {
+    font-size: 1.8rem;
   }
 }
