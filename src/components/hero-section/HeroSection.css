@@ -1,5 +1,5 @@
 .hero-section {
-  background-color: #fff;
+  background-color: #ECECEC;
 }
 
 .hero-section-container {
@@ -9,6 +9,12 @@
   flex-direction: column;
   padding-top: 40px;
   max-width: 1170px;
+}
+
+.brand-highlights {
+  list-style: none;
+  padding-left: 10px;
+  margin-top: 10px;
 }
 
 .image-container {
@@ -46,15 +52,15 @@
 
 .areas-list-container {
   width: 100%;
-  background-color: #7A7D7D;
-  color: #fff;
+  background-color: #FAFAFA;
+  color: #000000;
   padding: 15px;
   display: flex;
   flex-direction: column;
 }
 
 .areas-text {
-  padding: 10px 0;
+  padding: 0px 0;
 }
 
 .intro {
@@ -67,7 +73,12 @@
 }
 
 .black-heading {
-  color: black;
+  color: #113F67;
+}
+
+.sub-heading{
+  color: #113F67;
+  padding-top: 10px;
 }
 
 .lightning {

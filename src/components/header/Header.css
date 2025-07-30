@@ -1,5 +1,5 @@
 .header {
-  background-color: #D0CFCF;
+  background-color: #FFFFFF;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -20,6 +20,8 @@
   top: 11px;
   left: 0;
   cursor: pointer;
+  max-width: 350px;
+  height: auto;   
 }
 
 .info-container {
@@ -33,6 +35,14 @@
   position: relative;
 }
 
+h4 {
+  color: #0056A6;
+}
+
+.book{
+  color: #FF9800;
+}
+
 .phone-container {
   position: relative;
 }
@@ -44,10 +54,11 @@
   left: -40px;
   top: 15px;
   font-size: 1.6rem;
+  color: #333333;
 }
 
 .mob {
-  color: black;
+  color: #333333;
   font-size: 1.5em;
   font-weight: bold;
   display: block;

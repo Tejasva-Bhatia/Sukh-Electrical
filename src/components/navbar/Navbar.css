@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #D0CFCF;
+  background-color: #FFFFFF;
   height: 50px;
 }
 
@@ -33,6 +33,9 @@
   box-shadow: 0 25px 23px -27px rgba(0,0,0,0.7) inset;
   padding-top: 20px;
 }
+.nav-menu-active .nav-item {
+  color: black;
+}
 
 .nav-menu-active a {
   text-decoration: none;
@@ -61,19 +64,26 @@
   .nav-menu .nav-item {
     display: inline;
     margin-left: 55px;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .nav-links {
     text-decoration: none;
-    color: #7A7D7D;
+    color: #0056A6;
+    font-weight: 500; /* Medium weight for balance */
+    font-size: 1rem; /* Matches or aligns with header text */
   }
+  .nav-links.active {
+    color: #000 !important;
+  }
+  
 
   .nav-links:hover {
-    color: black;
+    color: #00A1FF;
     transition: 0.3s all linear;
   }
 
+  
   .menu-icon {
     display: none;
   }

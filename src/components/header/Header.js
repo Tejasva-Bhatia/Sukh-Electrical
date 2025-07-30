@@ -19,12 +19,12 @@ function Header() {
           <div className="quote-container">
             <i className="header-icon fas fa-clipboard"></i>
             <h4>Need a quote?</h4>
-            <h2>BOOK US NOW</h2>
+            <h2 className='book'>BOOK US NOW</h2>
           </div>
           <div className="phone-container">
             <i className="header-icon fas fa-phone-alt"></i>
             <h4>Call us now</h4>
-            <a className="mob" href="tel:07927582796">07927 582796</a>
+            <a className="mob" href="tel:+610450723673">0450 723 673</a>
           </div>
         </div>
       </div>

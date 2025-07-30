@@ -16,25 +16,27 @@ function HeroSection() {
         </div>
         <div className="areas-list-container">
           <div className="intro">
-            <h2 className="black-heading">AG Electrical Services</h2>
-            <p className="areas-text">For all your electrical needs, we strive to deliver a friendly and professional service, priding ourselves on the quality of our work. Feel free to get in touch regarding any electrical concerns you may have. We'd love to hear from you!</p>
+            <h2 className="black-heading">About Sukh Electricals</h2>
+            <p className="areas-text">Sukh Electricals is a trusted provider of residential and commercial electrical solutions. Backed by years of experience and fully certified professionals, we deliver reliable, safe, and honest service—tailored to suit your needs and schedule.
+            </p>
           </div>
           <div className="areas">
-            <h2 className="black-heading">Areas Covered:</h2>
-            <ul className="areas-list">
-              <li className="areas-list-item">Hertfordshire</li>
-              <li className="areas-list-item">Hatfield</li>
-              <li className="areas-list-item">St. Albans</li>
-              <li className="areas-list-item">Welwyn Garden City</li>
-              <li className="areas-list-item">Welham Green</li>
-              <li className="areas-list-item">North London</li>
+            <h2 className="black-heading">Our Promise</h2>
+            <p className="areas-text">
+              We focus on quality workmanship, transparent pricing, and customer satisfaction from start to finish. Whether it’s a quick fix or a full installation, we treat your space with care and respect—because trust is built on every wire we connect.
+            </p>
+            <h4 className="sub-heading">Why Customers Choose Us:</h4>
+
+            <ul className="brand-highlights">
+              <li className="highlight-item">✅ Fully Certified & Insured</li>
+              <li className="highlight-item">⚡ Emergency Callouts Available</li>
+              <li className="highlight-item">🕒 Quick Response Times</li>
+              <li className="highlight-item">💬 Free Quotes & Clear Pricing</li>
             </ul>
+            
+
           </div>
-          <p className="areas-text-2"></p>
-          <div className="call-us-cont">
-            <h1 className="call-us-now">Call us now:</h1>
-            <a className="number" href="tel:07927582796">07927 582796</a>
-          </div>
+          
         </div>
         < JobCards />
       </div>

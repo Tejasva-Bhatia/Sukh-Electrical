@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'; // changed from Link to NavLink
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 
@@ -17,7 +17,6 @@ function Navbar({ scrollToTop }) {
 
   useEffect(() => {
     window.addEventListener('resize', showLinks)
-
     return () => {
       window.removeEventListener('resize', showLinks)
     }
@@ -32,29 +31,29 @@ function Navbar({ scrollToTop }) {
           </div>
           <ul className={click ? 'nav-menu-active' : 'nav-menu'}>
             <li className="nav-item" onClick={scrollToTop}>
-              <Link to='/' className="nav-links" onClick={closeMobileMenu}>
+              <NavLink exact to='/' className="nav-links" activeClassName="active" onClick={closeMobileMenu}>
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link to='/services' className="nav-links" onClick={closeMobileMenu}>
+              <NavLink to='/services' className="nav-links" activeClassName="active" onClick={closeMobileMenu}>
                 Services
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link to='/projects' className="nav-links" onClick={closeMobileMenu}>
+              <NavLink to='/projects' className="nav-links" activeClassName="active" onClick={closeMobileMenu}>
                 Projects
-              </Link>
+              </NavLink>
             </li>
-            <li className={click ? "nav-item-hide" : "nav-item"} >
-              <Link to='/reviews' className="nav-links" onClick={closeMobileMenu}>
+            <li className={click ? "nav-item-hide" : "nav-item"}>
+              <NavLink to='/reviews' className="nav-links" activeClassName="active" onClick={closeMobileMenu}>
                 Reviews
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link to='/contact' className="nav-links" onClick={closeMobileMenu}>
+              <NavLink to='/contact' className="nav-links" activeClassName="active" onClick={closeMobileMenu}>
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
