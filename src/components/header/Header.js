@@ -24,7 +24,7 @@ function Header() {
           <div className="phone-container">
             <i className="header-icon fas fa-phone-alt"></i>
             <h4>Call us now</h4>
-            <a className="mob" href="tel:+610450723673">0450 723 673</a>
+            <a className="mob" href="tel:+610450723673"> 0450 723 673</a>
           </div>
         </div>
       </div>

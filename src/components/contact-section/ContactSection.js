@@ -14,10 +14,10 @@ function ContactSection({ isHomePage }) {
           </div>
           <div className="contact-details-cont">
             <div className="contact-details">
-              <p>Ashley Gambrill</p>
+              <p>Sukhwinder Singh</p>
               <div className="phone cont">
                 <i className="fas fa-phone-alt"></i>
-                <a href="tel:07927582796">07927 582796</a>
+                <a href="tel:+610450723673">0450 723 673</a>
               </div>
               <div className="email cont">
                 <i className="far fa-envelope"></i>
