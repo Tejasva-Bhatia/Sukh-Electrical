@@ -1,35 +1,59 @@
 .jobs-section-container {
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 20px 0;
   width: 100%;
+  background-color: #ECECEC; /* Light gray background for section */
 }
 
 .jobs-title {
   text-align: center;
   margin-bottom: 25px;
+  color: #2C3E50; /* Deep charcoal for text */
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .job-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px 15px;
+  gap: 20px;
+  padding: 0 15px;
+  list-style: none; /* Remove default list styling */
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.job-item {
+  background-color: #F5F1E9; /* Cream background for cards */
+  color: #2C3E50; /* Deep charcoal text */
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+.job-item:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
 }
 
 @media (min-width: 960px) {
   .job-cards {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr); /* Four columns on desktop */
+    padding: 0 20px;
   }
 }
 
 @media (max-width: 500px) {
   .job-cards {
-    display: block;
+    grid-template-columns: 1fr; /* Stack vertically on mobile */
+    padding: 0 10px;
   }
   .job-item {
     margin-bottom: 15px;
   }
   .jobs-section-container {
-    padding-bottom: 0;
+    padding-bottom: 10px;
   }
 }
-

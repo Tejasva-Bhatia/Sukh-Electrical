@@ -7,14 +7,14 @@ function JobCards() {
     <div className="jobs-section-container">
       <div className="job-cards-container">
         <ul className="job-cards">
-          <JobCardItem text="Full & partial rewires" />
-          <JobCardItem text="Replacement consumer units" />
-          <JobCardItem text="LED lighting installation/upgrade" />
-          <JobCardItem text="Fault finding" />
-          <JobCardItem text="Electrical Installation Condition Report (EICR)" />
-          <JobCardItem text="Outdoor lighting & power" />
-          <JobCardItem text="Smoke/CO detectors" />
-          <JobCardItem text="Security lighting/cameras" />
+          <JobCardItem text="Get Your Lights Installed" />
+          <JobCardItem text="Fix Electrical Issues Fast" />
+          <JobCardItem text="Ensure Safe Home Checks" />
+          <JobCardItem text="24/7 Emergency Help" />
+          <JobCardItem text="Set Up Data & Phone Lines" />
+          <JobCardItem text="Outdoor Lighting & Power" />
+          <JobCardItem text="Upgrade Your Power Supply" />
+          <JobCardItem text="AC & Security Installation" />
         </ul>
       </div>
     </div>

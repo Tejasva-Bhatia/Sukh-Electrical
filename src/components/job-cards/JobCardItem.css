@@ -12,5 +12,29 @@
   color: red;
   margin-right: 8px;
   flex-shrink: 0;
+}.job-item {
+  background-color: #F5F1E9; /* Cream background */
+  color: #2C3E50; /* Deep charcoal text */
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+.bolt {
+  color: #B87333; /* Copper accent for icon */
+  margin-right: 10px;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.job-text {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.2;
 }
 
