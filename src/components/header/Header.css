@@ -81,7 +81,7 @@ h4 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black for fade */
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black for fade */
   z-index: 999; /* Below options but above content */
 }
 
@@ -93,9 +93,9 @@ h4 {
   text-decoration: none;
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
   width: 200px; /* Square dimension */
-  height: 200px; /* Square dimension */
+  height: 100px; /* Square dimension */
   z-index: 1000; /* Above overlay */
-  background-color: #145077; 
+  background-color: #d8dbde; 
   border-radius: 10px; /* Square with rounded corners */
   transition: all 0.3s ease;
 }
@@ -105,7 +105,7 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #FF9800; /* White text for contrast */
+  color: #B87333; /* White text for contrast */
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.4; /* Improved line spacing */
@@ -120,7 +120,7 @@ h4 {
 }
 
 .email-option:hover {
-  background-color: #0066cc; /* Lighter blue on hover */
+  background-color: #FEF9F3; /* Lighter blue on hover */
 }
 
 .email-option:hover .highlight {
@@ -134,7 +134,7 @@ h4 {
 }
 
 .phone-option:hover {
-  background-color: #0066cc; /* Lighter blue on hover */
+  background-color: #FEF9F3; /* Lighter blue on hover */
 }
 
 .phone-option:hover .highlight {
