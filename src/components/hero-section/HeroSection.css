@@ -19,7 +19,7 @@
 
 .image-container {
   position: relative;
-  color: white;
+  color: #2C3E50; /* Deep charcoal for text */
 }
 
 .cta-image {
@@ -37,17 +37,35 @@
 
 .main-title {
   font-size: 1.7rem;
+  font-weight: 700;
+  color: #B87333; /* Warm copper */
+  margin: 0;
 }
 
 .strapline {
   font-size: 1.2rem;
+  font-weight: 600;
+  color: #2C3E50;
+  margin: 0;
 }
 
 .main-text-cont {
   position: absolute;
-  top: 50%;
-  padding-left: 15px;
-  transform: translateY(-50%);
+  bottom: 10px; /* Bottom of the image */
+  left: 10px; /* Left alignment */
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.74); /* Light cream with transparency */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: left; /* Align text to the left */
+  z-index: 1; /* Ensure it’s above the image */
+}
+
+.licence-tag {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2C3E50;
+  margin: 0;
 }
 
 .areas-list-container {
@@ -76,7 +94,7 @@
   color: #113F67;
 }
 
-.sub-heading{
+.sub-heading {
   color: #113F67;
   padding-top: 10px;
 }
@@ -109,11 +127,16 @@
   .main-title {
     font-size: 2rem;
   }
-  .main-text-cont {
-    line-height: 1.7;
-  }
   .strapline {
     font-size: 1.4rem;
+  }
+  .main-text-cont {
+    bottom: 20px; /* More space on desktop */
+    left: 20px;
+    padding: 15px;
+  }
+  .licence-tag {
+    font-size: 1.2rem;
   }
 }
 
@@ -138,6 +161,9 @@
   .strapline {
     font-size: 1.5rem;
   }
+  .licence-tag {
+    font-size: 1.3rem;
+  }
   .intro {
     display: block;
   }
@@ -150,6 +176,18 @@
   .hero-section-container {
     width: 90%;
   }
+  .main-text-cont {
+    bottom: 5px;
+    left: 5px;
+    padding: 5px;
+  }
+  .main-title {
+    font-size: 1.2rem;
+  }
+  .strapline {
+    font-size: 1rem;
+  }
+  .licence-tag {
+    font-size: 0.9rem;
+  }
 }
-
-
