@@ -1,11 +1,11 @@
 .reviews-section {
-  background-color: #ECECEC; /* Light gray section background */
+  background-color: #E0E0E0; /* Light gray section background */
   padding: 20px 0;
 }
 
 .reviews-section-standalone {
   min-height: calc(100vh - 180px); /* Adjusted for better fit */
-  background-color: #ECECEC; /* Consistent background */
+  background-color: #E0E0E0; /* Consistent background */
 }
 
 .reviews-section-container {
@@ -13,7 +13,7 @@
   margin: 0 auto;
   max-width: 1170px; /* Matches other sections */
   padding: 20px 0; /* Unified padding */
-  background-color: #ECECEC; /* Matches section background */
+  background-color: #E0E0E0; /* Matches section background */
   border-radius: 0; /* Removed rounding to avoid edge highlight */
   /* Removed box-shadow to eliminate boundary */
 }
