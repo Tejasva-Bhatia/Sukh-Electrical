@@ -1,5 +1,6 @@
 .project-section {
-  background-color: #fff;
+  background-color: #ECECEC; /* Light gray background for section */
+  padding: 20px 0;
 }
 
 .project-section-container {
@@ -12,25 +13,35 @@
 .projects-title {
   text-align: center;
   margin-bottom: 25px;
-  font-size: 2.5rem;
+  font-size: 2rem; /* Slightly reduced from 2.5rem for balance */
+  color: #2C3E50; /* Deep charcoal */
+  font-weight: 700;
+}
+
+.project-gallery-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default */
+  gap: 15px; /* Reduced gap for compactness */
+  padding: 0 15px;
 }
 
 @media (min-width: 693px) {
   .project-gallery-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr; /* Two columns on tablets */
   }
 }
 
 @media (min-width: 1060px) {
   .project-gallery-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr); /* Four columns on desktops */
   }
 }
 
 @media (max-width: 420px) {
   .project-section-container {
     width: 90%;
+  }
+  .project-gallery-container {
+    padding: 0 10px;
   }
 }

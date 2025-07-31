@@ -1,13 +1,9 @@
 .project-image-container {
   position: relative;
   color: white;
-  margin-bottom: 20px;
-}
-
-@media (min-width: 693px ) {
-  .project-image-container {
-    margin-bottom: 0px;
-  }
+  margin-bottom: 15px; /* Reduced margin */
+  border-radius: 5px;
+  overflow: hidden; /* Ensures image fits within rounded corners */
 }
 
 .project-info {
@@ -18,35 +14,58 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  padding: 0 20px;
+  padding: 10px; /* Reduced padding */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3); /* Subtle tint for readability */
+  transition: opacity 0.2s ease;
 }
 
 .project-info:hover {
   opacity: 1;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  transition: all 0.2s linear;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Darker on hover */
 }
 
 .project-image {
   display: block;
   width: 100%;
+  height: 150px; /* Fixed height to make cards smaller */
+  object-fit: cover; /* Ensures image scales properly */
 }
 
 .project-heading {
-  padding: 10px 0;
+  font-size: 1rem; /* Reduced from implicit larger size */
+  font-weight: 600;
+  color: #F5F1E9; /* Cream text for contrast */
+  padding: 5px 0;
+  margin: 0;
 }
 
 .project-desc {
-  padding: 10px 0;
+  font-size: 0.9rem; /* Reduced for compactness */
+  color: #F5F1E9; /* Cream text */
+  padding: 5px 0;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limits to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .zoom {
-  padding: 10px 0;
+  font-size: 1.5rem; /* Slightly larger for visibility */
+  color: #B87333; /* Copper accent */
+  padding: 5px 0;
+  cursor: pointer;
 }
 
-
-
+@media (min-width: 693px) {
+  .project-image-container {
+    margin-bottom: 0;
+  }
+  .project-image {
+    height: 180px; /* Slightly taller on larger screens */
+  }
+}

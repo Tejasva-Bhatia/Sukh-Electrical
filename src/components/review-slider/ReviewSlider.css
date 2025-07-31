@@ -57,7 +57,7 @@
 }
 
 .review-text-container {
-  background-color: #7a7d7d;
+  background-color: #088484;
   padding: 20px 40px 20px 30px;
   display: flex;
   flex-direction: column;
@@ -92,46 +92,56 @@
   justify-content: flex-end;
 }
 
+.quote-text {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.quote-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
 .prev, .next {
   position: absolute;
   top: 50%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: grid;
   place-items: center;
   cursor: pointer;
-  background-color: #D0CFCF;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  color: red;
-  box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.6);
+  background-color: #F5F1E9; /* Cream background */
+  border: 2px solid #B87333; /* Copper border */
+  border-radius: 50%; /* Circular buttons */
+  color: #B87333; /* Copper icon */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 40px;
+  height: 40px;
   outline: none;
+  transition: all 0.3s ease;
 }
 
 .prev {
   left: 0;
-  transform: translate( -50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .next {
   right: 0;
-  transform: translate(50%, -50%); 
+  transform: translate(50%, -50%);
 }
 
-.prev:hover {
-  background-color: #7A7D7D;
-  color: #fff;
-  transition: all 0.3s linear;
-}
-
-.next:hover {
-  background-color: #7A7D7D;
-  color: #fff;
-  transition: all 0.3s linear;
+.prev:hover, .next:hover {
+  background-color: #B87333; /* Copper on hover */
+  color: #F5F1E9; /* Cream text on hover */
 }
 
 @media (min-width: 960px) {
   .prev, .next {
     font-size: 3rem;
+    width: 50px;
+    height: 50px;
   }
 }
-
