@@ -43,7 +43,7 @@ const projects = [
     id: 6,
     img: '/images/project-gallery/Oven-RCD.jpg',
     largeimg: '/images/project-gallery/Oven-RCD.jpg',
-    heading: "📟 Oven & RCD Installatio",
+    heading: "📟 Oven & RCD Installation",
     desc: "Oven and RCD installed for kitchen upgrade project.",
     portrait: true
   },
