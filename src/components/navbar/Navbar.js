@@ -8,7 +8,8 @@ function Navbar({ scrollToTop }) {
 
   const handleClick = () => {
     console.log('Toggle clicked, new state:', !click); // Debug log
-    setClick(!click);
+    setClick(prevClick => !prevClick); // Ensure toggle works
+    if (click) setClick(false); // Force close if already open
   };
   const closeMobileMenu = () => setClick(false);
 
