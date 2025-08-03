@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 20px 0;
   width: 100%;
-  background-color: #ECECEC; /* Light gray background for section */
+  background-color: #E0E0E0; /* Medium gray, matches page background */
 }
 
 .jobs-title {
@@ -24,7 +24,7 @@
 }
 
 .job-item {
-  background-color: #F5F1E9; /* Cream background for cards */
+  background-color: #C0A06A; /* Muted gold, replaces cream */
   color: #2C3E50; /* Deep charcoal text */
   border-radius: 5px;
   padding: 10px;
@@ -36,6 +36,7 @@
 
 .job-item:hover {
   transform: translateY(-2px); /* Slight lift on hover */
+  border: 2px solid #B87333; /* Copper border on hover for accent */
 }
 
 @media (min-width: 960px) {

@@ -1,5 +1,5 @@
 .hero-section {
-  background-color: #E0E0E0;
+  background-color: #E0E0E0; /* Matches page background */
 }
 
 .hero-section-container {
@@ -45,7 +45,7 @@
 .strapline {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #2C3E50;
+  color: #2C3E50; /* Charcoal */
   margin: 0;
 }
 
@@ -54,7 +54,7 @@
   bottom: 10px; /* Bottom of the image */
   left: 10px; /* Left alignment */
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.74); /* Light cream with transparency */
+  background-color: rgba(192, 160, 106, 0.85); /* Semi-transparent muted gold */
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   text-align: left; /* Align text to the left */
@@ -64,14 +64,14 @@
 .licence-tag {
   font-size: 1rem;
   font-weight: 500;
-  color: #2C3E50;
+  color: #2C3E50; /* Charcoal */
   margin: 0;
 }
 
 .areas-list-container {
   width: 100%;
-  background-color: #FAFAFA;
-  color: #000000;
+  background-color: #E0E0E0; /* Matches hero-section */
+  color: #2C3E50; /* Charcoal */
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -91,11 +91,11 @@
 }
 
 .black-heading {
-  color: #113F67;
+  color: #2C3E50; /* Charcoal */
 }
 
 .sub-heading {
-  color: #113F67;
+  color: #2C3E50; /* Charcoal */
   padding-top: 10px;
 }
 
@@ -105,6 +105,12 @@
 
 .call-us-cont {
   padding-top: 10px;
+}
+
+.number {
+  color: #2C3E50; /* Charcoal */
+  font-size: 2rem;
+  text-decoration: none;
 }
 
 @media (min-width: 960px) {
@@ -143,12 +149,7 @@
 .call-us-now {
   font-size: 2rem;
   line-height: 1;
-}
-
-.number {
-  color: black;
-  font-size: 2rem;
-  text-decoration: none;
+  color: #2C3E50; /* Charcoal */
 }
 
 @media (min-width: 1250px) {
