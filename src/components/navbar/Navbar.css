@@ -22,7 +22,7 @@
 
 .nav-menu-active {
   position: absolute;
-  top: 70px; /* Adjusted to align with header height on mobile */
+  top: 70px; /* Adjusted to align with header height */
   left: 0;
   width: 100%;
   height: 90vh;
@@ -51,7 +51,7 @@
 .menu-icon {
   cursor: pointer;
   color: #F5F1E9; /* Cream */
-  font-size: 1.5rem; /* Ensure visibility */
+  font-size: 1.5rem;
 }
 
 .nav-item-hide {

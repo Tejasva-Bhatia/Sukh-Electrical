@@ -17,8 +17,7 @@ function Navbar({ scrollToTop }) {
 
   useEffect(() => {
     window.addEventListener('resize', showLinks);
-    // Add touch event for mobile
-    window.addEventListener('touchstart', showLinks);
+    window.addEventListener('touchstart', showLinks); // Ensure touch triggers resize
     return () => {
       window.removeEventListener('resize', showLinks);
       window.removeEventListener('touchstart', showLinks);
@@ -29,7 +28,7 @@ function Navbar({ scrollToTop }) {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <div className="menu-icon" onClick={handleClick}>
+          <div className="menu-icon" onClick={handleClick} onTouchStart={handleClick}>
             {click ? <FaTimes /> : <FaBars />}
           </div>
           <ul className={click ? 'nav-menu-active' : 'nav-menu'}>

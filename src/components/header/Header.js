@@ -22,14 +22,22 @@ function Header() {
     }
   };
 
+  const handleTouchOutside = (event) => {
+    if (emailRef.current && !emailRef.current.contains(event.target) && phoneRef.current && !phoneRef.current.contains(event.target)) {
+      setShowOptions(false);
+    }
+  };
+
   const handleLinkClick = (event) => {
-    event.stopPropagation(); // Prevent the click from triggering handleClickOutside immediately
+    event.stopPropagation();
   };
 
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleTouchOutside); // Handle touch events
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleTouchOutside);
     };
   }, []);
 
