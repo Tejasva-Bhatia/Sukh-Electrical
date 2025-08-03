@@ -1,7 +1,28 @@
 .banner-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../images/background.jpg') center/cover fixed no-repeat;
+  position: relative;
+  min-height: 100vh; /* Ensure full viewport height */
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+.banner-section::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../images/background.jpg') center/cover no-repeat;
+  z-index: -1; /* Behind content */
 }
 
 .banner-container {
   padding: 150px 0;
+  position: relative; /* Ensure content scrolls over background */
+  z-index: 1; /* Above the pseudo-element */
+}
+
+@media (max-width: 430px) {
+  .banner-container {
+    padding: 100px 0; /* Reduced padding for mobile to fit content */
+  }
 }
