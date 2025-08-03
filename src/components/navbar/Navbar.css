@@ -1,6 +1,7 @@
 .navbar {
-  background-color: #FFFFFF;
+  background-color: #1C4062; /* New dark blue */
   height: 50px;
+  border-bottom: 2px solid #B87333; /* Copper border */
 }
 
 .navbar-container {
@@ -29,18 +30,19 @@
   text-align: center;
   list-style-type: none;
   z-index: 1;
-  background-color: #fff;
-  box-shadow: 0 25px 23px -27px rgba(0,0,0,0.7) inset;
+  background-color: #2E4F78; /* Lighter blue variant */
+  /* No shadow, as per your request */
   padding-top: 20px;
 }
+
 .nav-menu-active .nav-item {
-  color: black;
+  color: #F5F1E9; /* Cream */
 }
 
 .nav-menu-active a {
   text-decoration: none;
   display: block;
-  color: black;
+  color: #F5F1E9; /* Cream */
   cursor: pointer;
   width: 100%;
   padding-top: 25px;
@@ -49,7 +51,7 @@
 
 .menu-icon {
   cursor: pointer;
-  color: #7A7D7D;
+  color: #F5F1E9; /* Cream */
 }
 
 .nav-item-hide {
@@ -69,21 +71,21 @@
 
   .nav-links {
     text-decoration: none;
-    color: #0056A6;
-    font-weight: 500; /* Medium weight for balance */
-    font-size: 1rem; /* Matches or aligns with header text */
+    color: #F5F1E9; /* Cream */
+    font-weight: 500;
+    font-size: 1rem;
   }
   .nav-links.active {
-    color: #000 !important;
+    color: #1A7A7A !important; /* Lightened teal for better contrast */
+    font-weight: bold; /* Bold to make it pop */
+    /* Removed background-color: rgba(26, 122, 122, 0.2); to eliminate highlight */
   }
-  
 
   .nav-links:hover {
-    color: #00A1FF;
+    color: #B87333; /* Copper */
     transition: 0.3s all linear;
   }
 
-  
   .menu-icon {
     display: none;
   }

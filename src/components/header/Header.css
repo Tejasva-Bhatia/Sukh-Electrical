@@ -1,9 +1,9 @@
 .header {
-  background-color: #FFFFFF;
+  background-color: #1C4062; /* New dark blue */
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 5px rgba(184, 115, 51, 0.3); /* Subtle copper shadow */
 }
 
 .header-container {
@@ -36,16 +36,16 @@
 }
 
 h4 {
-  color: #0056A6;
+  color: #F5F1E9; /* Cream */
 }
 
 .book {
-  color: #FF9800;
+  color: #B87333; /* Copper */
   cursor: pointer;
 }
 
-.book:hover{
-  color:#FFD700;
+.book:hover {
+  color: #C9A05A; /* Deeper gold */
 }
 
 .phone-container {
@@ -59,11 +59,11 @@ h4 {
   left: -40px;
   top: 15px;
   font-size: 1.6rem;
-  color: #333333;
+  color: #F5F1E9; /* Cream */
 }
 
 .mob {
-  color: #333333;
+  color: #F5F1E9; /* Cream */
   font-size: 1.5em;
   font-weight: bold;
   display: block;
@@ -72,7 +72,7 @@ h4 {
 }
 
 .mob:hover {
-  color: #0288D1;
+  color: #066666; /* Teal */
 }
 
 .overlay {
@@ -81,22 +81,22 @@ h4 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black for fade */
-  z-index: 999; /* Below options but above content */
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black */
+  z-index: 999;
 }
 
 .option {
   position: fixed;
   display: flex;
   justify-content: center;
-  align-items: center; /* Center the text container */
+  align-items: center;
   text-decoration: none;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-  width: 200px; /* Square dimension */
-  height: 100px; /* Square dimension */
-  z-index: 1000; /* Above overlay */
-  background-color: #d8dbde; 
-  border-radius: 10px; /* Square with rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  height: 100px;
+  z-index: 1000;
+  background-color: #1C4062; /* New dark blue */
+  border-radius: 10px;
   transition: all 0.3s ease;
 }
 
@@ -105,45 +105,45 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #B87333; /* White text for contrast */
+  color: #F5F1E9; /* Cream */
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.4; /* Improved line spacing */
-  letter-spacing: 0.5px; /* Subtle letter spacing for aesthetics */
+  line-height: 1.4;
+  letter-spacing: 0.5px;
   text-align: center;
 }
 
 .email-option {
   top: 50%;
-  left: calc(50% - 210px); /* Adjusted to prevent overlap, 200px width + 10px gap */
+  left: calc(50% - 210px);
   transform: translateY(-50%);
 }
 
 .email-option:hover {
-  background-color: #FEF9F3; /* Lighter blue on hover */
+  background-color: #2E4F78; /* Lighter blue variant */
 }
 
 .email-option:hover .highlight {
-  text-decoration: underline; /* Underline only the email */
+  text-decoration: underline;
 }
 
 .phone-option {
   top: 50%;
-  left: calc(50% + 10px); /* Adjusted to prevent overlap, 10px gap */
+  left: calc(50% + 10px);
   transform: translateY(-50%);
 }
 
 .phone-option:hover {
-  background-color: #FEF9F3; /* Lighter blue on hover */
+  background-color: #2E4F78; /* Lighter blue variant */
 }
 
 .phone-option:hover .highlight {
-  text-decoration: underline; /* Underline only the phone number */
+  text-decoration: underline;
 }
 
 .highlight {
-  font-weight: 600; /* Slightly bolder for emphasis */
-  display: block; /* Ensures underline applies correctly */
+  font-weight: 600;
+  display: block;
 }
 
 @media (max-width: 960px) {
@@ -166,7 +166,7 @@ h4 {
     display: none;
   }
   .option {
-    width: 150px; /* Smaller squares for mobile */
+    width: 150px;
     height: 150px;
   }
   .option-text {
@@ -175,9 +175,9 @@ h4 {
     letter-spacing: 0.3px;
   }
   .email-option {
-    left: calc(50% - 165px); /* Adjusted for mobile */
+    left: calc(50% - 165px);
   }
   .phone-option {
-    left: calc(50% + 15px); /* Adjusted for mobile */
+    left: calc(50% + 15px);
   }
 }

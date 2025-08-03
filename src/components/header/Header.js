@@ -37,7 +37,7 @@ function Header() {
     <header className="header">
       <div className="header-container">
         <Link to='/'>
-          <img className="main-logo" src="/images/logo.jpg" alt="logo" onClick={scrollToTop} />
+          <img className="main-logo" src="/images/Logo.png" alt="logo" onClick={scrollToTop} />
         </Link>
         <div className="info-container">
           <div className="quote-container">

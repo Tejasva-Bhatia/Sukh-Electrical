@@ -1,11 +1,11 @@
 .contact-section {
-  background-color: #C9A05A; 
+  background-color: #C9A05A; /* Remains deeper gold */
   padding: 40px 0;
 }
 
 .contact-section-standalone {
   min-height: calc(100vh - 220px);
-  background-color: #C9A05A; /* Consistent background */
+  background-color: #E0E0E0; /* Changed to light gray */
   padding: 40px 0;
 }
 

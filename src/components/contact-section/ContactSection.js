@@ -35,7 +35,7 @@ function ContactSection({ isHomePage }) {
                 <div className="social-media-links-container">
                   <Link
                     className='social-link'
-                    to={'//www.facebook.com/sukhelectrical'}
+                    to={'//www.facebook.com/profile.php?id=100086633552378&sk=reels_tab'}
                     target='_blank'
                     aria-label='Facebook'
                   >
