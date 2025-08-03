@@ -10,7 +10,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  align-items: center;
+  align-items: center; /* Vertically center contents */
   padding: 5px 0;
   font-size: 1.5rem;
   max-width: 1170px;
@@ -22,14 +22,14 @@
 
 .nav-menu-active {
   position: absolute;
-  top: 70px; /* Adjusted to align with header height */
+  top: 50px; /* Adjusted to match navbar height, not header */
   left: 0;
   width: 100%;
   height: 90vh;
   display: block;
   text-align: center;
   list-style-type: none;
-  z-index: 1001; /* Ensure it’s above header options */
+  z-index: 1000; /* Reduced to allow menu-icon to stay above */
   background-color: #2E4F78; /* Lighter blue variant */
   padding-top: 20px;
 }
@@ -52,8 +52,18 @@
   cursor: pointer;
   color: #F5F1E9; /* Cream */
   font-size: 1.5rem;
-  z-index: 1002; /* Above other elements */
+  z-index: 1001; /* Above nav-menu-active */
   margin-right: 10px; /* Space from container */
+  padding: 5px; /* Reduced padding to prevent downward shift */
+  position: relative; /* Ensure proper stacking */
+}
+
+.menu-icon-inner {
+  display: inline-block;
+  width: 30px; /* Larger touch target */
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .nav-item-hide {
@@ -96,12 +106,18 @@
   .navbar-container {
     width: 90%;
     justify-content: flex-start; /* Align menu icon to start */
+    height: 50px; /* Fixed height to match navbar */
+    align-items: center; /* Ensure vertical centering */
   }
   .nav-menu-active {
-    top: 70px; /* Match header height */
+    top: 50px; /* Match navbar height */
     padding-top: 10px; /* Reduce padding for mobile */
   }
   .nav-menu-active a {
     padding-top: 15px; /* Adjust padding for mobile */
+  }
+  .menu-icon {
+    padding: 5px; /* Reduced to minimize vertical space */
+    margin-right: 10px;
   }
 }
