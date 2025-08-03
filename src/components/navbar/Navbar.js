@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
@@ -6,6 +6,10 @@ import './Navbar.css';
 function Navbar({ scrollToTop }) {
   const [click, setClick] = useState(false);
   const menuIconRef = useRef(null);
+
+  const handleTouchMove = useCallback((e) => {
+    e.preventDefault(); // Prevent scrolling during touch
+  }, []); // Empty dependency array since it's a static function
 
   const handleClick = (e) => {
     console.log('Toggle clicked, current state:', click); // Debug log
@@ -27,7 +31,6 @@ function Navbar({ scrollToTop }) {
   };
 
   useEffect(() => {
-    const handleTouchMove = (e) => e.preventDefault(); // Prevent scrolling during touch
     if (click && menuIconRef.current) {
       menuIconRef.current.addEventListener('touchmove', handleTouchMove, { passive: false });
     }
@@ -40,7 +43,7 @@ function Navbar({ scrollToTop }) {
       window.removeEventListener('resize', showLinks);
       window.removeEventListener('touchstart', showLinks);
     };
-  }, [click]);
+  }, [click, handleTouchMove]); // Added handleTouchMove to dependencies
 
   return (
     <>
