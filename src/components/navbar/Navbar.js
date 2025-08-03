@@ -6,10 +6,14 @@ import './Navbar.css';
 function Navbar({ scrollToTop }) {
   const [click, setClick] = useState(false);
 
-  const handleClick = () => {
-    console.log('Toggle clicked, new state:', !click); // Debug log
-    setClick(prevClick => !prevClick); // Ensure toggle works
-    if (click) setClick(false); // Force close if already open
+  const handleClick = (e) => {
+    console.log('Toggle clicked, current state:', click); // Debug log
+    e.preventDefault(); // Prevent default behavior
+    if (click) {
+      setClick(false); // Close on cross click
+    } else {
+      setClick(true); // Open on bars click
+    }
   };
   const closeMobileMenu = () => setClick(false);
 
@@ -31,10 +35,10 @@ function Navbar({ scrollToTop }) {
   return (
     <>
       <nav className="navbar">
+        <div className="menu-icon" onClick={handleClick} onTouchStart={handleClick}>
+          {click ? <FaTimes /> : <FaBars />}
+        </div>
         <div className="navbar-container">
-          <div className="menu-icon" onClick={handleClick} onTouchStart={handleClick}>
-            {click ? <FaTimes /> : <FaBars />}
-          </div>
           <ul className={click ? 'nav-menu-active' : 'nav-menu'}>
             <li className="nav-item" onClick={scrollToTop}>
               <NavLink exact to='/' className="nav-links" activeClassName="active" onClick={closeMobileMenu}>
