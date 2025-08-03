@@ -1,16 +1,16 @@
 .service-item {
   display: flex;
   flex-direction: column;
-  border-radius: 10px; /* Reduced from 15px */
-  background-color: #C0A06A; /* Muted gold */
-  margin-bottom: 20px; /* Reduced from 30px */
+  border-radius: 10px; 
+  background-color: #C0A06A; 
+  margin-bottom: 20px; 
 }
 
 .service-image {
   display: block;
   width: 100%;
-  height: 250px; /* Reduced height for smaller cards */
-  object-fit: cover; /* Ensures image scales properly */
+  height: 250px; 
+  object-fit: cover; 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -23,24 +23,24 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  font-size: 2rem; /* Reduced from 2.5rem */
-  width: 4rem; /* Reduced from 5rem */
-  height: 4rem; /* Reduced from 5rem */
+  font-size: 2rem; 
+  width: 4rem; 
+  height: 4rem; 
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #066666; /* Toned teal */
+  background-color: #066666; 
   border-radius: 50%;
   transform: translate(-50%, 50%);
-  border: 4px solid #C0A06A; /* Reduced from 5px */
+  border: 4px solid #C0A06A; 
 }
 
 .service-icon-container img {
-  width: 36px; /* Reduced from 44px */
+  width: 36px; 
 }
 
 .service-details {
-  padding: 20px 15px 15px 15px; /* Reduced from 50px 20px 20px 20px */
+  padding: 20px 15px 15px 15px; 
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -48,13 +48,13 @@
 }
 
 .service-title {
-  font-size: 1.2rem; /* Reduced from 1.4rem */
+  font-size: 1.2rem; 
   text-align: center;
 }
 
 .service-text {
-  font-size: 0.9rem; /* Reduced for smaller cards */
-  padding: 10px 0; /* Reduced from 15px */
+  font-size: 0.9rem; 
+  padding: 10px 0; 
 }
 
 .service-footer {
@@ -64,5 +64,5 @@
 }
 
 .service-footer img {
-  width: 30px; /* Reduced logo size if applicable */
+  width: 30px;
 }
