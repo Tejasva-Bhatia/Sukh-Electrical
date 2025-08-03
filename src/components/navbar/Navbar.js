@@ -24,26 +24,38 @@ function Navbar({ scrollToTop }) {
 
   const closeMobileMenu = () => setClick(false);
 
-  const showLinks = () => {
+  const showLinks = useCallback(() => {
     if (window.innerWidth >= 960) {
       setClick(false);
     }
-  };
+  }, []); // Empty dependency array since it only depends on setClick
 
+  // Effect for window event listeners
   useEffect(() => {
-    if (click && menuIconRef.current) {
-      menuIconRef.current.addEventListener('touchmove', handleTouchMove, { passive: false });
-    }
     window.addEventListener('resize', showLinks);
     window.addEventListener('touchstart', showLinks, { passive: true }); // iOS-friendly
     return () => {
-      if (menuIconRef.current) {
-        menuIconRef.current.removeEventListener('touchmove', handleTouchMove);
-      }
       window.removeEventListener('resize', showLinks);
       window.removeEventListener('touchstart', showLinks);
     };
-  }, [click, handleTouchMove]); // Added handleTouchMove to dependencies
+  }, [showLinks]);
+
+  // Effect for touchmove listener based on click and ref
+  useEffect(() => {
+    const currentRef = menuIconRef.current; // Capture ref value
+    if (currentRef) {
+      if (click) {
+        currentRef.addEventListener('touchmove', handleTouchMove, { passive: false });
+      } else {
+        currentRef.removeEventListener('touchmove', handleTouchMove);
+      }
+    }
+    return () => {
+      if (currentRef) {
+        currentRef.removeEventListener('touchmove', handleTouchMove);
+      }
+    };
+  }, [click, handleTouchMove]); // No need for menuIconRef in dependencies since captured
 
   return (
     <>
