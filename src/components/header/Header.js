@@ -34,7 +34,7 @@ function Header() {
 
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
-    document.addEventListener('touchstart', handleTouchOutside); // Handle touch events
+    document.addEventListener('touchstart', handleTouchOutside, { passive: true }); // iOS-friendly touch
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
       document.removeEventListener('touchstart', handleTouchOutside);

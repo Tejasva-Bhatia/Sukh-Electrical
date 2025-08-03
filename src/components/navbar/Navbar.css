@@ -52,6 +52,7 @@
   cursor: pointer;
   color: #F5F1E9; /* Cream */
   font-size: 1.5rem;
+  z-index: 1002; /* Above other elements */
 }
 
 .nav-item-hide {
@@ -90,7 +91,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   .navbar-container {
     width: 90%;
     justify-content: flex-start; /* Align menu icon to start */

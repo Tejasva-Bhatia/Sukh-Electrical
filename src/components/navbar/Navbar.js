@@ -6,7 +6,10 @@ import './Navbar.css';
 function Navbar({ scrollToTop }) {
   const [click, setClick] = useState(false);
 
-  const handleClick = () => setClick(!click);
+  const handleClick = () => {
+    console.log('Toggle clicked, new state:', !click); // Debug log
+    setClick(!click);
+  };
   const closeMobileMenu = () => setClick(false);
 
   const showLinks = () => {
@@ -17,7 +20,7 @@ function Navbar({ scrollToTop }) {
 
   useEffect(() => {
     window.addEventListener('resize', showLinks);
-    window.addEventListener('touchstart', showLinks); // Ensure touch triggers resize
+    window.addEventListener('touchstart', showLinks, { passive: true }); // iOS-friendly
     return () => {
       window.removeEventListener('resize', showLinks);
       window.removeEventListener('touchstart', showLinks);
