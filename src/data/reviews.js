@@ -1,27 +1,27 @@
 const reviews = [
   {
     id: 1,
-    image: '/images/reviews-gallery/review-garage.jpg',
-    quote: "Over the last year, Ashley from AG Electrical Servies has carried out all the electrical work in my garage from installation of the consumer unit to outdoor lighting. I found him to be very reliable and conscientious, would highly recommend him.",
-    name: "Jonathan Mears (East Barnet)"
+    image: '/images/reviews-gallery/review1.jpg',
+    quote: "Working with Sukhwinder from Sukh Electrical was a genuinely seamless experience. He installed the outdoor lighting on the exterior of our home and handled additional electrical upgrades inside our house, including fixture replacements and rewiring. He was punctual, professional, and took the time to explain things clearly. I wouldn’t hesitate to recommend him to anyone looking for reliable electrical services.",
+    name: "Shahbaz Singh (Rockingham)"
   },
   {
     id: 2,
-    image: '/images/reviews-gallery/review-kitchen.jpg',
-    quote: "Ashley did a fantastic and professional job on our kitchen. Ashley is extremely reliable and trustworthy, we highly recommend him for all your electrical needs!",
-    name: "Charlotte Wolff (Bow)"
+    image: '/images/reviews-gallery/review2.jpg',
+    quote: "Sukh installed our kitchen island lights with style and precision. The geometric design is modern, bright, and perfectly placed. The entire setup elevated our space instantly. He worked efficiently and paid attention to every detail. His craftsmanship speaks for itself.",
+    name: "Emily Thompson (Wattle Grove)"
   },
   {
     id: 3,
-    image: '/images/reviews-gallery/review-decking.jpg',
-    quote: "Ashley was always courteous, friendly and very creative with his ideas and showed a clear understanding of what I was trying to achieve. He did a superb job for me including designing of the layout of my new decking lights and his attention to detail was second to none. I am thrilled with the outcome and would highly recommend him.",
-    name: "Jos Day (Whetstone)"
+    image: '/images/reviews-gallery/review3.jpg',
+    quote: "Sukh brought our backyard to life with stunning deck lighting. The warm glow adds charm and makes evenings outdoors feel magical. His work was clean, thoughtful, and beautifully executed. We’re thrilled with the transformation. Highly recommend for outdoor lighting projects!",
+    name: "Lachlan Reid (Mandurah)"
   },
   {
     id: 4,
-    image: '/images/reviews-gallery/review-consumer-unit.jpg',
-    quote: "Ashley updated our fuse board which was over 30 years old. He was conscientious, friendly and transparent throughout the 2 days he worked here. He also regularly cleaned up after himself and always ensured that he left the house in a clean state",
-    name: "Luke Perera (Enfield)"
+    image: '/images/reviews-gallery/review4.jpg',
+    quote: "A grand chandelier now shines as the heart of our home, thanks to Sukh Electrical’s flawless installation. The balance of elegance and impact is truly striking. Sukh took the time to understand our vision and made it feel effortless. This project has transformed our space into something spectacular.",
+    name: " Callum Hayes (Osbourne Park)"
   },
 ];
 

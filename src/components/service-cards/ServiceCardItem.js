@@ -14,9 +14,7 @@ function ServiceCardItem(props) {
         <div className="service-details">
           <h3 className="service-title">{props.title}</h3>
           <p className="service-text">{props.text}</p>
-          <div className="service-footer">
-            <img src="/images/logo-tiny.jpg" alt="" />
-          </div>
+          
         </div>
       </article>
     </>

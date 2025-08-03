@@ -52,7 +52,7 @@ function ContactSection({ isHomePage }) {
                 </div>
               </div>
             </div>
-            <img className="client-photo" src="/images/me.jpg" alt="Sukhwinder Bhatia" />
+            <img className="client-photo" src="/images/Sukhwinder.jpg" alt="Sukhwinder Bhatia" />
           </div>
         </div>
       </div>

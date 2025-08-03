@@ -1,5 +1,5 @@
 .services-section {
-  background: #fff;
+  background: #E0E0E0; /* Matches page background */
   padding-bottom: 50px;
 }
 
@@ -14,6 +14,12 @@
   text-align: center;
   margin-bottom: 25px;
   font-size: 2.5rem;
+  color: #2C3E50; /* Charcoal */
+  font-weight: 700;
+}
+
+.services-cards-container {
+  width: 100%;
 }
 
 .service-cards {
@@ -24,7 +30,7 @@
 @media (min-width: 933px) {
   .service-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
     gap: 25px;
   }
 }
