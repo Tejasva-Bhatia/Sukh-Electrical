@@ -35,10 +35,10 @@ function Navbar({ scrollToTop }) {
   return (
     <>
       <nav className="navbar">
-        <div className="menu-icon" onClick={handleClick} onTouchStart={handleClick}>
-          {click ? <FaTimes /> : <FaBars />}
-        </div>
         <div className="navbar-container">
+          <div className="menu-icon" onClick={handleClick} onTouchStart={handleClick}>
+            {click ? <FaTimes /> : <FaBars />}
+          </div>
           <ul className={click ? 'nav-menu-active' : 'nav-menu'}>
             <li className="nav-item" onClick={scrollToTop}>
               <NavLink exact to='/' className="nav-links" activeClassName="active" onClick={closeMobileMenu}>
