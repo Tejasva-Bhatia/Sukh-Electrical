@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom'; // changed from Link to NavLink
+import { NavLink } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 
@@ -16,11 +16,14 @@ function Navbar({ scrollToTop }) {
   };
 
   useEffect(() => {
-    window.addEventListener('resize', showLinks)
+    window.addEventListener('resize', showLinks);
+    // Add touch event for mobile
+    window.addEventListener('touchstart', showLinks);
     return () => {
-      window.removeEventListener('resize', showLinks)
-    }
-  }, [])
+      window.removeEventListener('resize', showLinks);
+      window.removeEventListener('touchstart', showLinks);
+    };
+  }, []);
 
   return (
     <>
