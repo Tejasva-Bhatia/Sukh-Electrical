@@ -6,6 +6,7 @@ import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 function ReviewSlider() {
   const [testimonials] = useState(reviews);
   const [index, setIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false); // Track hover state
 
   useEffect(() => {
     const lastIndex = testimonials.length - 1;
@@ -15,21 +16,22 @@ function ReviewSlider() {
     if (index > lastIndex) {
       setIndex(0);
     }
-  }, [index, testimonials])
+  }, [index, testimonials]);
 
   useEffect(() => {
-    let slider = setInterval(() => {
-      setIndex(index + 1);
-    }, 12000);
+    let slider = null;
+    if (!isHovered) { // Only set interval when not hovered
+      slider = setInterval(() => {
+        setIndex(index + 1);
+      }, 12000);
+    }
 
-    return () => clearInterval(slider)
-
-  }, [index])
-
+    return () => clearInterval(slider); // Cleanup interval on unmount or re-run
+  }, [index, isHovered]); // Include isHovered to restart interval when hover ends
 
   return (
     <div className="slider-container">
-      <div className="section-center" >
+      <div className="section-center">
         {testimonials.map((testimonial, testimonialIndex) => {
           const { id, image, quote, name } = testimonial;
 
@@ -42,7 +44,12 @@ function ReviewSlider() {
           }
 
           return (
-            <article className={position} key={id}>
+            <article
+              className={position}
+              key={id}
+              onMouseEnter={() => setIsHovered(true)} // Pause on hover
+              onMouseLeave={() => setIsHovered(false)} // Resume on hover end
+            >
               <div className="review-image-container">
                 <img src={image} alt="" className="rev-image" />
               </div>
@@ -65,7 +72,6 @@ function ReviewSlider() {
       <button className="next" onClick={() => setIndex(index + 1)}>
         <FiChevronRight />
       </button>
-
     </div>
   );
 }
