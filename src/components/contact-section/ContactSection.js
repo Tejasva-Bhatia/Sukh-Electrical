@@ -43,7 +43,7 @@ function ContactSection({ isHomePage }) {
                   </Link>
                   <Link
                     className='social-link'
-                    to={'//www.instagram.com/sukhelectrical'}
+                    to={'//www.instagram.com/sukhelectrical007?igsh=NHBjZDJ3NWo3dGxt'}
                     target='_blank'
                     aria-label='Instagram'
                   >
